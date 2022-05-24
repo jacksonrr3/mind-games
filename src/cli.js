@@ -10,7 +10,18 @@ const getUserName = () => {
   return userName;
 };
 
+const writeToUser = (question) => {
+  console.log(question);
+};
+
+const getUserAnswer = (description) => {
+  const answer = readLineSync.question(description);
+  return answer;
+};
+
 export default {
   writeGreeting,
   getUserName,
+  writeToUser,
+  getUserAnswer,
 };
