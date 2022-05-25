@@ -9,7 +9,7 @@ const getRondFunc = () => () => {
   const secondNum = utils.getRandomInt(maxNum);
 
   const question = `${firstNum} ${secondNum}`;
-  const answer = utils.gcd(firstNum, secondNum);
+  const answer = utils.gcd(firstNum, secondNum).toString();
   return {
     question,
     answer,

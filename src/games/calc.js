@@ -8,15 +8,15 @@ const getRondFunc = () => () => {
   const ops = [
     {
       name: '+',
-      getRes: (a, b) => a + b,
+      getRes: (a, b) => (a + b),
     },
     {
       name: '-',
-      getRes: (a, b) => a - b,
+      getRes: (a, b) => (a - b),
     },
     {
       name: '*',
-      getRes: (a, b) => a * b,
+      getRes: (a, b) => (a * b),
     },
   ];
   const op = utils.getRandomFromArray(ops);
@@ -24,7 +24,7 @@ const getRondFunc = () => () => {
   const secondNum = utils.getRandomInt(maxNum);
 
   const question = `${firstNum} ${op.name} ${secondNum}`;
-  const answer = op.getRes(firstNum, secondNum);
+  const answer = op.getRes(firstNum, secondNum).toString();
   return {
     question,
     answer,
