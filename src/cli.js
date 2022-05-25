@@ -10,8 +10,8 @@ const getUserName = () => {
   return userName;
 };
 
-const writeToUser = (question) => {
-  console.log(question);
+const writeToUser = (reply) => {
+  console.log(reply);
 };
 
 const getUserAnswer = (description) => {

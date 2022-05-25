@@ -1,12 +1,14 @@
-function getRandomInt(max) {
-  return Math.floor(Math.random() * max);
-}
+const getRandomInt = (max) => Math.floor(Math.random() * max);
 
-function isEven(num) {
-  return !(num % 2);
-}
+const isEven = (num) => !(num % 2);
+
+const getRandomFromArray = (arr) => {
+  const pos = getRandomInt(arr.length);
+  return arr[pos];
+};
 
 export default {
   getRandomInt,
+  getRandomFromArray,
   isEven,
 };
