@@ -21,7 +21,7 @@ const runGame = ({ rules, getRoundData }) => {
   }
 
   const gameResult = isFail
-    ? `Let's try again, ${userName}`
+    ? `Let's try again, ${userName}!`
     : `Congratulations, ${userName}!`;
   cli.writeToUser(gameResult);
 };
