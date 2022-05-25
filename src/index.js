@@ -2,7 +2,9 @@ import cli from './cli.js';
 
 const ROUNDS = 3;
 
-const runGame = (userName, { rules, getRoundData }) => {
+const runGame = ({ rules, getRoundData }) => {
+  cli.writeGreeting();
+  const userName = cli.getUserName();
   cli.writeToUser(rules);
   let isFail = false;
 

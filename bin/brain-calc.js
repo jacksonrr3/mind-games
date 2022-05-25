@@ -1,10 +1,9 @@
-import cli from '../src/cli.js';
+#!/usr/bin/env node
+
 import game from '../src/index.js';
 import calc from '../src/games/calc.js';
 
-cli.writeGreeting();
-const userName = cli.getUserName();
-game.runGame(userName, {
+game.runGame({
   rules: calc.getGameRules(),
   getRoundData: calc.getRondFunc(),
 });
