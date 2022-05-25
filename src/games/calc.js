@@ -1,5 +1,7 @@
 import utils from '../utils.js';
 
+const maxNum = 500;
+
 const getGameRules = () => 'What is the result of the expression?';
 
 const getRondFunc = () => () => {
@@ -18,8 +20,8 @@ const getRondFunc = () => () => {
     },
   ];
   const op = utils.getRandomFromArray(ops);
-  const firstNum = utils.getRandomInt(500);
-  const secondNum = utils.getRandomInt(500);
+  const firstNum = utils.getRandomInt(maxNum);
+  const secondNum = utils.getRandomInt(maxNum);
 
   const question = `${firstNum} ${op.name} ${secondNum}`;
   const answer = op.getRes(firstNum, secondNum);
