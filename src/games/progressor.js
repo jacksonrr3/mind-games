@@ -16,8 +16,6 @@ const getRondFunc = () => () => {
   const step = utils.getRandomInt(maxStep);
   const progression = utils.generateRandomArray(arrayLength, start, step);
 
-  // const firstNum = utils.getRandomInt(500);
-  // const secondNum = utils.getRandomInt(500);
   const hidedPosition = utils.getRandomInt(10);
   const question = createQuestionFromArray(progression, hidedPosition);
   const answer = progression[hidedPosition].toString();
